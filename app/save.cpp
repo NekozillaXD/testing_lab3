@@ -1,6 +1,6 @@
 #include "functions.h"
 
-void saveresult(int score, QString name, QString file_name)
+int saveresult(int score, QString name, QString file_name)
 {
     QFile file(file_name);
     // Если файл успешно открыт для записи в текстовом режиме
@@ -9,10 +9,12 @@ void saveresult(int score, QString name, QString file_name)
             QTextStream writeStream(&file);
             writeStream << score <<" "<< name << endl;
             file.close();
+            return 0;
         }
     else
         {
             std::cout << "Can't open leaderboard" << std::endl;
+            return 1;
         }
 
 }

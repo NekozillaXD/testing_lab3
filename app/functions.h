@@ -11,7 +11,7 @@
 #include <algorithm>
 
 bool check(int plx, int ply, int plh, int plw, int obx, int oby, int obh, int obw);
-void saveresult(int score, QString name, QString file_name);
+int saveresult(int score, QString name, QString file_name);
 QString loadresult(QString path);
 void sorting(QString Path, QString OutputPath);
 

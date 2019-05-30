@@ -153,6 +153,14 @@ TEST(saveTest4, specialSymbols)
     else
         FAIL();
 }
-
+TEST(saveTest4, nofile)
+{
+    if(!saveresult(0,"noname", "nofile")) {
+        SUCCEED();
+    }
+    else {
+        FAIL();
+    }
+}
 #endif // SAVE_TEST_H
 
