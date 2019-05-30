@@ -1,0 +1,6 @@
+200 player3
+75 player4
+23 player5
+250 player2
+7 player6
+300 player1
