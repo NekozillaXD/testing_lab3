@@ -155,7 +155,8 @@ TEST(saveTest4, specialSymbols)
 }
 TEST(saveTest4, nofile)
 {
-    if(saveresult(0,"noname", "nofile") == 1) {
+    cout << saveresult(0, "noname", "tests/input/saveInput999.txt");
+    if(saveresult(0,"noname", "tests/input/saveInput999.txt") == 0) {
         SUCCEED();
     }
     else {
