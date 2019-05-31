@@ -155,7 +155,7 @@ TEST(saveTest4, specialSymbols)
 }
 TEST(saveTest4, nofile)
 {
-    if(!saveresult(0,"noname", "nofile")) {
+    if(saveresult(0,"noname", "nofile") == 1) {
         SUCCEED();
     }
     else {
